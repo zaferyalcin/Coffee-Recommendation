@@ -1,7 +1,7 @@
 from email import header
 from email.mime import application
 from flask import Flask, request, jsonify
-import ai_coffee_recommendation 
+import app.ai_coffee_recommendation as ai_coffee_recommendation 
 
 app = Flask(__name__)
 
@@ -26,12 +26,3 @@ def closest():
         coffeeList = ai_coffee_recommendation.get_coffee_recommendation(data['coffee_name'])
         print(coffeeList)
         return coffeeList
-
-
-        
-
-
-
-
-if __name__ == "__main__":
-        app.run()
