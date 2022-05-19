@@ -1,0 +1,10 @@
+fancyimpute
+category_encoders
+missingno
+Flask
+pandas
+seaborn
+numpy
+matplotlib
+sklearn
+scipy==1.8.0
